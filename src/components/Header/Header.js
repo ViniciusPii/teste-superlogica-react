@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <nav class="navbar navbar-expand-lg">
-        <div className="container">
+        <div className="container col col-md-8">
           <a class="navbar-brand" href="/">
             <img src={logo} alt="logo" />
           </a>

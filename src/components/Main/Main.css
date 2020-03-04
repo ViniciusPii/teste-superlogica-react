@@ -1,0 +1,33 @@
+main {
+  background: #fbfbff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 800px;
+}
+
+.title {
+  text-align: left;
+  font-size: 48px;
+  font-weight: bold;
+  color: #1e232c;
+  margin-bottom: 14px;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #5f6879;
+  margin-bottom: 32px;
+  line-height: 25px;
+}
+
+.btn {
+  width: 170px;
+  height: 45px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.image {
+  width: 792px;
+  height: 645px;
+  margin-right: -120px;
+}
