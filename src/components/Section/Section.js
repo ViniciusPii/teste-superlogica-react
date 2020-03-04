@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Section.css";
 import axios from "axios";
-import Carousel, { Dots } from "@brainhubeu/react-carousel";
+import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import user from "../../assets/images/user-icon.png";
 
@@ -49,7 +49,7 @@ const Section = () => {
         <p className="p-sub-section">
           Existem ainda recursos especializados para cada segmento
         </p>
-        <div className="container col-md-10">
+        <div className="container col-md-8 width">
           <Carousel
             slidesPerPage={4}
             arrows
