@@ -43,3 +43,33 @@
   margin: 0 15px;
 }
 
+.card-image {
+  margin-top: 66px;
+}
+
+.card-title {
+  max-width: 108px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 34px;
+}
+
+.card-sub {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 17px 0 24px 0;
+  color: #5F6879;
+}
+
+.card-desc {
+  max-width: 220px;
+  color: #5F6879;
+  text-align: center;
+}
+
+.btn-card {
+  width: 111px;
+  height: 45px;
+  margin-top: 26px;
+}

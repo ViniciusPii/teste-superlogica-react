@@ -3,7 +3,7 @@ import "./Section.css";
 import axios from "axios";
 
 const Section = () => {
-  const [data, setData] = useState([{}]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
@@ -15,18 +15,20 @@ const Section = () => {
 
   const renderCard = card => {
     return (
-      <div className="card-section d-flex flex-column justify-content-center align-items-center margin">
-        <img src="" alt="" />
-        <div className="card-title">Ola</div>
-        <div className="card-sub">sub</div>
-        <div className="card-desc">HUDHSUDSDISDISIJDSIJDSIJDIJSD</div>
-        <button className="btn btn-primary">Saiba mais</button>
+      <div className="card-section d-flex flex-column align-items-center margin">
+        <img src={card.icon} alt="" className="card-image" />
+        <div className="card-title">{card.title}</div>
+        <div className="card-sub">{card.headline}</div>
+        {card.features.map(feature => (
+          <div className="card-desc">{feature}</div>
+        ))}
+        <button className="btn btn-primary btn-card">Saiba mais</button>
       </div>
     );
   };
 
   return (
-    <section className="section">
+    <section className="section container-fluid">
       <div className="content d-flex flex-column align-items-center">
         <h6 className="span-info">Software</h6>
         <h4 className="title-section">
@@ -44,8 +46,7 @@ const Section = () => {
         <p className="p-sub-section">
           Existem ainda recursos especializados para cada segmento
         </p>
-        {/* <div className="row">{data.map(renderCard)}</div> */}
-        
+        <div className="row">{data.map(renderCard)}</div>
       </div>
     </section>
   );
