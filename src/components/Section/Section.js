@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Section.css";
 import axios from "axios";
+import Carousel, { Dots } from "@brainhubeu/react-carousel";
+import "@brainhubeu/react-carousel/lib/style.css";
+import user from "../../assets/images/user-icon.png";
 
 const Section = () => {
   const [data, setData] = useState([]);
@@ -46,7 +49,18 @@ const Section = () => {
         <p className="p-sub-section">
           Existem ainda recursos especializados para cada segmento
         </p>
-        <div className="row">{data.map(renderCard)}</div>
+        <div className="container col-md-10">
+          <Carousel
+            slidesPerPage={4}
+            arrows
+            infinite
+            arrowLeft={<i class="fas fa-chevron-left icon"></i>}
+            arrowRight={<i class="fas fa-chevron-right icon"></i>}
+            addArrowClickHandler
+          >
+            {data.map(renderCard)}
+          </Carousel>
+        </div>
       </div>
     </section>
   );
