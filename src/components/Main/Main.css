@@ -1,4 +1,4 @@
-main {
+.main {
   background: #fbfbff 0% 0% no-repeat padding-box;
   opacity: 1;
   height: 800px;
@@ -29,5 +29,11 @@ main {
 .image {
   width: 792px;
   height: 645px;
-  margin-right: -120px;
+  margin-right: -100px;
+}
+
+@media (max-width: 991.98px) {
+  .image {
+    display: none;
+  }
 }

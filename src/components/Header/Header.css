@@ -1,6 +1,10 @@
-header, a{
+.header, a{
   font-size: 14px;
   color: #1e232c;
+}
+
+.header, ul, li{
+  padding: 0 10px;
 }
 
 .navbar {

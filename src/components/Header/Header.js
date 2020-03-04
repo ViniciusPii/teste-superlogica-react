@@ -5,14 +5,14 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div className="container col col-md-8">
-          <a class="navbar-brand" href="/">
+    <header className="header">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          <a className="navbar-brand" href="/">
             <img src={logo} alt="logo" />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -20,34 +20,34 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="flex">
-              <ul class="navbar-nav flex">
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
+              <ul className="navbar-nav flex">
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
                     Home
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
                     Software
                   </a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="/">
+                <li className="nav-item dropdown">
+                  <a className="nav-link" href="/">
                     Serviços
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
                     Eventos
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
                     Blog
                   </a>
                 </li>
