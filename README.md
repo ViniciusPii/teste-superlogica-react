@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Teste superlógica
 
-## Available Scripts
+Esse projeto é um esboço do site da empresa superlógica de Campinas-Sp, feito em React.Js, faz parte de um dos objetivos dados a quem concorre a uma vaga na empresa.
 
-In the project directory, you can run:
+## Começando
 
-### `yarn start`
+Para executar o projeto, você precisa das seguintes ferramentas:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.Js
+- React.Js
+- IDE/Editor de texto (Visual Studio Code é recomendado).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Desenvolvimento
 
-### `yarn test`
+Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```shell
+cd "diretório de sua preferência"
+git clone https://github.com/ViniciusPii/teste-superlogica-react
+```
 
-### `yarn build`
+## Construção
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para iniciar o projeto/construí-lo, é necessário usar os seguintes comandos:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+npm install
+```
 
-### `yarn eject`
+- yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```shell
+yarn
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Configuração
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para iniciar o projeto, é necessário o seguinte comando:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- npm
 
-## Learn More
+```shell
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- yarn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+yarn start
+```
 
-### Code Splitting
+## Links
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Referência do projeto
 
-### Analyzing the Bundle Size
+- https://xd.adobe.com/view/f5f83df4-3ac7-4e67-5034-f23756b4bc62-83c9
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Api utilizada
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- http://5e5eae96b5c43c0014ef934c.mockapi.io/api/softwares
