@@ -3,14 +3,14 @@ import "./Section.css";
 import axios from "axios";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
-import user from "../../assets/images/user-icon.png";
+import url from '../../config/baseApi'
 
 const Section = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`http://5e5eae96b5c43c0014ef934c.mockapi.io/api/softwares`)
+      .get(url)
       .then(res => {
         setData(res.data);
       });
