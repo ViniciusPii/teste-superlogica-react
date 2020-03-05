@@ -18,14 +18,14 @@ const Section = () => {
 
   const renderCard = card => {
     return (
-      <div className="card-section d-flex flex-column align-items-center margin">
-        <img src={card.icon} alt="" className="card-image" />
-        <div className="card-title">{card.title}</div>
-        <div className="card-sub">{card.headline}</div>
+      <div className="section-card d-flex flex-column align-items-center margin">
+        <img src={card.icon} alt="" className="section-card-image" />
+        <div className="section-card-title">{card.title}</div>
+        <div className="section-card-sub">{card.headline}</div>
         {card.features.map(feature => (
-          <div className="card-desc">{feature}</div>
+          <div className="section-card-desc">{feature}</div>
         ))}
-        <button className="btn btn-primary btn-card">Saiba mais</button>
+        <button className="btn btn-primary section-btn-card">Saiba mais</button>
       </div>
     );
   };
@@ -33,11 +33,11 @@ const Section = () => {
   return (
     <section className="section container-fluid">
       <div className="content d-flex flex-column align-items-center">
-        <h6 className="span-info">Software</h6>
-        <h4 className="title-section">
-          Transformamos <strong className="yellow">4 grandes mercados</strong>
+        <h6 className="section-info">Software</h6>
+        <h4 className="section-title">
+          Transformamos <strong className="strong-color">4 grandes mercados</strong>
         </h4>
-        <p className="p-section text-center">
+        <p className="section-p text-center">
           Os softwares da Superlógica oferecem um sistema financeiro completo
           para atender as necessidades dos mercados condominial, imobiliário,
           educacional e de empresas que trabalham no modelo de pagamento
@@ -46,17 +46,17 @@ const Section = () => {
           uma régua de cobrança eficiente e integrar diversas soluções via API.
         </p>
 
-        <p className="p-sub-section">
+        <p className="section-sub-p">
           Existem ainda recursos especializados para cada segmento
         </p>
         <div className="container col-md-8 width">
           <Carousel
-            slidesPerPage={4}
+            addArrowClickHandler
+            arrowLeft={<i class="fas fa-chevron-left section-card-icon"></i>}
+            arrowRight={<i class="fas fa-chevron-right section-card-icon"></i>}
             arrows
             infinite
-            arrowLeft={<i class="fas fa-chevron-left icon"></i>}
-            arrowRight={<i class="fas fa-chevron-right icon"></i>}
-            addArrowClickHandler
+            slidesPerPage={4}
           >
             {data.map(renderCard)}
           </Carousel>
