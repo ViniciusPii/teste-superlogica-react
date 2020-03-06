@@ -1,3 +1,13 @@
 .footer {
-  height: 900px;
+  height: 400px;
+}
+
+.footer-content {
+  margin-top: 220px;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
 }

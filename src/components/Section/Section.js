@@ -29,7 +29,7 @@ const Section = () => {
 
   const renderCard = card => {
     return (
-      <div className="section-card d-flex flex-column align-items-center margin">
+      <div className="section-card d-flex flex-column align-items-center m-3">
         <img src={card.icon} alt="" className="section-card-image" />
         <div className="section-card-title">{card.title}</div>
         <div className="section-card-sub">{card.headline}</div>
@@ -46,8 +46,8 @@ const Section = () => {
       <div className="content d-flex flex-column align-items-center">
         <h6 className="section-info">Software</h6>
         <h4 className="section-title">
-          Transformamos{" "}
-          <strong className="strong-color">4 grandes mercados</strong>
+          Transformamos
+          <strong className="strong-color"> 4 grandes mercados</strong>
         </h4>
         <p className="section-p text-center">
           Os softwares da Superlógica oferecem um sistema financeiro completo
