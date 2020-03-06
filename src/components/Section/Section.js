@@ -64,8 +64,8 @@ const Section = () => {
         <div className="container col-md-8 width">
           <Carousel
             addArrowClickHandler
-            arrowLeft={<i class="fas fa-chevron-left section-card-icon"></i>}
-            arrowRight={<i class="fas fa-chevron-right section-card-icon"></i>}
+            arrowLeft={<i className="fas fa-chevron-left section-card-icon"></i>}
+            arrowRight={<i className="fas fa-chevron-right section-card-icon"></i>}
             arrows
             infinite
             slidesPerPage={slide}
