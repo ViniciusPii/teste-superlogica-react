@@ -7,10 +7,10 @@
 }
 
 .footer-title {
-  text-transform: uppercase;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .footer-nav-menu, a{
@@ -19,7 +19,7 @@
 }
 
 .footer-info {
-  font-size: 12px;
   color: #5f6879;
+  font-size: 12px;
   margin-top: 57px;
 }
