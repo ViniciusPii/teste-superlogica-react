@@ -7,7 +7,7 @@ const Main = () => {
     <main className="d-flex align-items-center main">
       <div className="container">
         <div className="row d-flex align-items-center">
-          <div className="main-info col col-lg-4 ">
+          <div className="main-info col-lg-4">
             <h1 className="main-title">Empreendendo juntos, todos os dias</h1>
             <h6 className="main-sub-title">
               Softwares de gestão para administração de condomínios,
