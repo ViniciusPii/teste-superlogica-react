@@ -1,5 +1,5 @@
 .section {
-  background-image: linear-gradient(291deg, #00B8FF 0%, #4700CB 100%);
+  background-image: linear-gradient(291deg, #00b8ff 0%, #4700cb 100%);
   color: #fff;
   height: 741px;
 }
@@ -16,11 +16,11 @@
 }
 
 .strong-color {
-  color: #FFCB50;
+  color: #ffcb50;
 }
 
 .section-p {
-  color: #8ABBFF;
+  color: #8abbff;
   max-width: 768px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .section-card-sub {
-  color: #5F6879;
+  color: #5f6879;
   font-size: 11px;
   font-weight: bold;
   margin: 17px 0 24px 0;
@@ -63,7 +63,7 @@
 }
 
 .section-card-desc {
-  color: #5F6879;
+  color: #5f6879;
   max-width: 220px;
   text-align: center;
 }
@@ -80,4 +80,26 @@
 
 .width {
   max-width: 1250px;
+}
+
+@media (max-width: 991.98px) {
+  .section {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    text-align: center;
+  }
+
+  .section-sub-p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 374px) {
+  .section-card-icon {
+    font-size: 15px;
+  }
 }

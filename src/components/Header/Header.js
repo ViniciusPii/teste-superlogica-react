@@ -5,8 +5,8 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header">
-      <nav className="navbar navbar-expand-lg">
+    <header className="header p-0">
+      <nav className="navbar navbar-expand-lg col-12">
         <div className="container">
           <a className="navbar-brand" href="/">
             <img src={logo} alt="logo" />
