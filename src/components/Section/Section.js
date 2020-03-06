@@ -3,18 +3,29 @@ import "./Section.css";
 import axios from "axios";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
-import url from '../../config/baseApi'
+import url from "../../config/baseApi";
 
 const Section = () => {
   const [data, setData] = useState([]);
+  const [slide, setSlide] = useState(4);
 
   useEffect(() => {
-    axios
-      .get(url)
-      .then(res => {
-        setData(res.data);
-      });
+    axios.get(url).then(res => {
+      setData(res.data);
+    });
   }, []);
+
+  window.addEventListener("resize", function() {
+    if (window.innerWidth >= 1024) {
+      setSlide(4);
+    } else if (window.innerWidth >= 885) {
+      setSlide(3);
+    } else if (window.innerWidth >= 700) {
+      setSlide(2);
+    } else {
+      setSlide(1);
+    }
+  });
 
   const renderCard = card => {
     return (
@@ -35,7 +46,8 @@ const Section = () => {
       <div className="content d-flex flex-column align-items-center">
         <h6 className="section-info">Software</h6>
         <h4 className="section-title">
-          Transformamos <strong className="strong-color">4 grandes mercados</strong>
+          Transformamos{" "}
+          <strong className="strong-color">4 grandes mercados</strong>
         </h4>
         <p className="section-p text-center">
           Os softwares da Superlógica oferecem um sistema financeiro completo
@@ -56,7 +68,7 @@ const Section = () => {
             arrowRight={<i class="fas fa-chevron-right section-card-icon"></i>}
             arrows
             infinite
-            slidesPerPage={4}
+            slidesPerPage={slide}
           >
             {data.map(renderCard)}
           </Carousel>

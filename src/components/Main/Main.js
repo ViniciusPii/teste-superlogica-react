@@ -14,10 +14,12 @@ const Main = () => {
               imobiliárias, escolas e negócios que cobram assinaturas e
               pagamentos recorrentes.
             </h6>
-            <button className="btn btn-primary main-btn">Experimente Grátis</button>
+            <button className="btn btn-primary main-btn">
+              Experimente Grátis
+            </button>
           </div>
-          <div className="col col-sm-8 d-flex justify-content-end">
-            <img src={main} alt="main" className="main-image img-fluid" />
+          <div className="col col-sm-8 d-flex">
+            <img src={main} alt="main" className="main-image img-fluid ml-5" />
           </div>
         </div>
       </div>

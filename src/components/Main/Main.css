@@ -27,12 +27,11 @@
 
 .main-image {
   height: 645px;
-  margin-right: -100px;
   width: 792px;
 }
 
 @media (max-width: 991.98px) {
-  .image {
+  .main-image {
     display: none;
   }
 }
